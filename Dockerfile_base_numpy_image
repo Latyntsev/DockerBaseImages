@@ -1,0 +1,5 @@
+# syntax=docker/dockerfile:1
+FROM latyntsev/base_python_image
+RUN pip install --upgrade pip setuptools wheel
+RUN apk add make automake gcc g++ subversion python3-dev
+RUN pip install numpy
